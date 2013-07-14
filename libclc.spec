@@ -62,18 +62,11 @@ make %{?_smp_mflags}
 
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %make_install
-find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
-
-
-%post -p /sbin/ldconfig
-
-%postun -p /sbin/ldconfig
 
 
 %files
-%doc
+%doc LICENSE.TXT README.TXT CREDITS.TXT
 %{_libexecdir}/*.bc
 
 %files devel
