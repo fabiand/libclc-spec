@@ -12,8 +12,9 @@ URL:            http://libclc.llvm.org/
 # $ git archive --prefix $PKG/ --format tar HEAD | xz > $PKG.tar.xz
 Source0:        %{name}-%{git}.tar.xz
 
-BuildRequires:  llvm >= 3.2-2, llvm-devel, llvm-static
-BuildRequires:	clang >= 3.2-2
+BuildRequires:  llvm >= 3.3-0.6, llvm-devel, llvm-static
+BuildRequires:	clang >= 3.3-0.6
+BuildRequires:	zlib
 BuildRequires:	python
 
 %description
