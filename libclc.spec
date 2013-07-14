@@ -79,7 +79,8 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 %files devel
 %doc
 %{_includedir}/clc
-%{_libdir}/pkgconfig/%{name}.pc
+# FIXME is there a predefined variable for pkgconfig?
+%{_prefix}/lib/pkgconfig/%{name}.pc
 
 
 %changelog
