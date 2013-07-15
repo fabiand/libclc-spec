@@ -1,4 +1,4 @@
-%define git 20130714git5217211
+%define git 20130715gitce72a50
 
 Name:           libclc
 Version:        0.0.1
