@@ -3,7 +3,7 @@
 Name:           libclc
 Version:        0.0.1
 Release:        0.%{git}%{?dist}
-Summary:        An open source implementation of the library OpenCL 1.1 library requirements
+Summary:        An open source implementation of the OpenCL 1.1 library requirements
 
 License:        BSD
 URL:            http://libclc.llvm.org/
