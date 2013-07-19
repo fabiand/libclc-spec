@@ -1,14 +1,14 @@
-%define git 20130715gitce72a50
+%define git 20130719git2e8fa9f
 
 Name:           libclc
 Version:        0.0.1
-Release:        0.0.%{git}%{?dist}
+Release:        0.1.%{git}%{?dist}
 Summary:        An open source implementation of the OpenCL 1.1 library requirements
 
 License:        BSD
 URL:            http://libclc.llvm.org/
 # Created using:
-# $ export PKG=libclc-$(date +%Y%m%d)git$(git describe --always)
+# $ export PKG=libclc-$(date +%Y%m%d)git$(git describe --always) ; echo $PKG
 # $ git archive --prefix $PKG/ --format tar HEAD | xz > $PKG.tar.xz
 Source0:        %{name}-%{git}.tar.xz
 
@@ -78,5 +78,9 @@ make %{?_smp_mflags}
 
 
 %changelog
-* Sun Jul 14 2013 Fabian Deutsch <fabiand@fedoraproject.org> - 0.0.1-0.20130714git5217211
+* Fri Jul 19 2013 Fabian Deutsch <fabiand@fedoraproject.org> - 0.0.1-0.1.20130719git2e8fa9f
+- Update to latest upstream
+- Release field now reflects that it's a pre-release
+
+* Sun Jul 14 2013 Fabian Deutsch <fabiand@fedoraproject.org> - 0.0.1-0.0.20130714git5217211
 - Initial package
